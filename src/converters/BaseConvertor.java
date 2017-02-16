@@ -1,6 +1,5 @@
 package converters;
 
-import java.io.FileNotFoundException;
 import java.math.BigInteger;
 
 public class BaseConvertor
@@ -8,7 +7,7 @@ public class BaseConvertor
 	private static String digitsNorm = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	private static String digitsSixtyFour = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 	
-	public static void main(String[] args) throws FileNotFoundException
+	public static void main(String[] args)
 	{
 		//some examples
 		String num1 = "134710352538679645";
