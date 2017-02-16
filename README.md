@@ -14,7 +14,7 @@ This program runs the convertTool method which first validates the input, then p
 
 ### Converting from base10 to a given base
 
-convertThreeRec is a recursive method that works on the number one base-place at a time. (for a base-10 number, each recursion will work through a ones place, tens place, hundreds place, and so on). It first checks if the number is smaller than or equal to the given base. If so, it immediately returns a value (the base case of the recursion). Otherwise it keeps raising the base one power at a time until it exceeds or equals the number. If it exceeds the number, then it goes back down one power, and then iterates through each digit that preceeds the value representing the base, multiplying it by that amount. Once it has found the value that exceeded the target number, it then backtracks one more time selecting the highest digit that does not exceed the value of the target number. Next it stores that digit in a string which represents the end result, and then subtracts the amount represented by that digit from the target number. Lastly, it enters a recursion on the now smaller target number, and adds the result of that recursion to the end result string.
+convertThreeRec is a recursive method that works on the number, one base-place at a time. (for a base-10 number, each recursion will work through either a ones place, a tens place, a hundreds place, and so on). It first checks if the number is less than or equal to the given base. If so, it immediately returns a value (the base case of the recursion). Otherwise it keeps raising the base one power at a time until it exceeds or equals the target number. If it exceeds the number, then it goes back down one power, and then iterates through each digit that preceeds the value representing the base, multiplying it by that amount. Once it has found the value that exceeded the target number, it then backtracks one more time selecting the highest digit that does not exceed the value of the target number. Next it stores that digit in a string which represents the end result, and then subtracts the amount represented by that digit from the target number. Lastly, it enters a recursion on the now smaller target number, and adds the result of that recursion to the end result string.
 
 ## How it runs
 
@@ -52,7 +52,3 @@ Result is: 123456789
 Converting : 'FF' from base16 to base2
 Result is: 11111111
 ```
-
-    
-
-
