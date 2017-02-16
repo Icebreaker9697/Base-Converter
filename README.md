@@ -5,7 +5,10 @@ A Java program which converts a given number (in a specified start base) to a sp
 
 Although there are already much easier and simpler ways to convert between bases using the Java libraries, I wanted to tackle the challenge of writing the code myself. 
 
-Basically the order of the helper methods is as follows: main-->converTool-->convertFrom-->convert-->convertThreeRec
+Basically the order of the helper methods is as follows: 
+```
+main-->converTool-->convertFrom-->convert-->convertThreeRec
+```
 
 This program runs the convertTool method which first validates the input, then passes the arguments to a helper method called convertFrom. convertFrom first converts the given number to base10, and then passes that new number, along with the target base to another helper method called convert. The convert method sets up the input for a recursive helper method called convertThreeRec. This is the method that does the work.
 
